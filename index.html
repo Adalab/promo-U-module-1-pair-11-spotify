@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img src="" alt="" />
-      <nav>
+    <header class="cabecera">
+      <img class="cabecera__logo" src="images/logo.png" alt="" />
+      <img class="cabecera__menu-icon" src="images/menu-icon.png" alt="" />
+      <nav class="cabecera__menu">
         <ul>
           <li>Premium</li>
           <li>Ayuda</li>
@@ -21,56 +22,66 @@
           <li>Iniciar Sesión</li>
         </ul>
       </nav>
+      
     </header>
     <main>
-      <div>
+      <div class="main">
         <h1>Prueba Premium gratis 3 meses</h1>
         <h3>
           Escucha millones de canciones sin anuncios, a la carta y sin conexión
         </h3>
-        <a href="">Ver planes</a>
+        <a class="main__button" href="#">Ver planes</a>
         <p>
           Rigen términos y condiciones. Los tres meses gratis no están
           disponibles para usuarios que ya hayan probado Premium.
         </p>
       </div>
-      <h2>¿Por qué pasarte a Premium?</h2>
-      <article>
-        <img src="" alt="" />
-        <h3>Descarga música</h3>
-        <p>Llévala siempre contigo</p>
-      </article>
-
-      <article>
-        <img src="" alt="" />
-        <h3>Sin anuncios</h3>
-        <p>Disfruta de música sin interrupciones.</p>
-      </article>
-
-      <article>
-        <img src="" alt="" />
-        <h3>Escucha lo que quieras</h3>
-        <p>Incluso en el móvil.</p>
-      </article>
-
-      <article>
-        <img src="" alt="" />
-        <h3>Salta todas las canciones que quieras</h3>
-        <p>Simplemente dale a siguiente.</p>
-      </article>
+      <div class="medium">
+        <h2>¿Por qué pasarte a Premium?</h2>
+        <article class="medium__container">
+          <img class="medium__img" src="images/benefit-1.png" alt="" />
+          <div class="medium__item">
+            <h3>Descarga música</h3>
+            <p>Llévala siempre contigo</p>
+          </div>
+        </article>
+        <article class="medium__container">
+          <img class="medium__img" src="images/benefit-2.png" alt="" />
+          <div class="medium__item">
+            <h3>Sin anuncios</h3>
+            <p>Disfruta de música sin interrupciones.</p>
+          </div>
+        </article>
+        <article class="medium__container">
+          <img class="medium__img" src="images/benefit-3.png" alt="" />
+          <div class="medium__item">
+            <h3>Escucha lo que quieras</h3>
+            <p>Incluso en el móvil.</p>
+          </div>
+        </article>
+        <article class="medium__container">
+          <img class="medium__img" src="images/benefit-4.png" alt="" />
+          <div class="medium__item">
+            <h3>Salta todas las canciones que quieras</h3>
+            <p>Simplemente dale a siguiente.</p>
+          </div>
+        </article>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
       <nav>
-        <ul>
-          <li>Legal</li>
-          <li>Cookies</li>
-          <li>Información sobre los anuncios</li>
+        <ul class="footer__container">
+          <li class="footer__item">Legal</li>
+          <li class="footer__item">Cookies</li>
+          <li class="footer__item">Información sobre los anuncios</li>
         </ul>
       </nav>
-      <div>
-        <p>España</p>
-        <img src="" alt="Bandera de España" />
-        <p>© 2019 Spotify</p>
+      <div class="footer__right">
+        <div class="footer__lang">
+          <p>España</p>
+          <img class="footer__flag" src="images/es.svg" alt="Bandera de España" />
+        </div>
+      <p>© 2019 Spotify</p>
       </div>
     </footer>
   </body>
