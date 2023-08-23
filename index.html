@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="cabecera">
+    <header class="header">
       <img class="cabecera__logo" src="images/logo.png" alt="" />
       <img class="cabecera__menu-icon" src="images/menu-icon.png" alt="" />
       <nav class="cabecera__menu">
@@ -22,7 +28,6 @@
           <li>Iniciar Sesión</li>
         </ul>
       </nav>
-      
     </header>
     <main>
       <div class="main">
@@ -69,7 +74,7 @@
       </div>
     </main>
     <footer class="footer">
-      <nav>
+      <nav class="footer__left">
         <ul class="footer__container">
           <li class="footer__item">Legal</li>
           <li class="footer__item">Cookies</li>
@@ -79,9 +84,13 @@
       <div class="footer__right">
         <div class="footer__lang">
           <p>España</p>
-          <img class="footer__flag" src="images/es.svg" alt="Bandera de España" />
+          <img
+            class="footer__flag"
+            src="images/es.svg"
+            alt="Bandera de España"
+          />
         </div>
-      <p>© 2019 Spotify</p>
+        <p>© 2019 Spotify</p>
       </div>
     </footer>
   </body>
