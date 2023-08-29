@@ -1,8 +1,42 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+	color: $colorlight;
+	background-color: $colordark;
+	padding: 15px;
+	font-size: 12px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.footer__container {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap:20px;
+}
+
+.footer__left{
+	width: 55%;
+}
+
+.footer__right{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 45%;
+}
+
+.footer__lang {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer__lang p {
+	padding-top: 6px ;
+}
+
+.footer__flag{
+	width: 30px;
+	margin-left: 10px;
 }

@@ -1,5 +1,67 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+	color: $colorlight;
+	background-color: $colordark;
+	padding: 10px 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+
+		@media (min-width: 720px) { 
+			align-items: center;
+			padding-inline: 25px;
+			
+		}
+	
 }
+
+
+
+
+
+.header__logo {
+	width: 100px;
+}
+
+
+.header__menu-icon {
+	width: 27px;
+	@media (min-width:720px) {
+		display: none;
+	}
+	
+}
+
+.header__menu {
+	display: none;
+	@media (min-width: 720px) {
+		display: flex;
+		justify-content: flex-end;
+		width: 75%;
+	}
+}
+
+
+
+	
+
+	
+	
+	.header__menu > ul {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 30px;  
+		list-style-type: none;
+		margin-left: 30px;
+	}
+	
+	/*  esto significa colocar un "|" detrás del primer ul */
+	.header__menu > ul:first-child::after {
+		content: "|";
+	}
+	
+	.header__menu > h2 {
+		font-weight: 300;
+	}

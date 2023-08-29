@@ -1,0 +1,75 @@
+.WhyPremium {
+	padding-block: 30px;
+	padding-inline: 15px;
+}
+
+/* articles */
+
+.container__articles {
+	/* background-color: chocolate; */
+	margin-block: 10px;
+	padding: 2px;
+
+	display: flex;
+	flex-direction: column; 
+	flex-wrap: nowrap;
+
+	@media (min-width:720px) {
+		flex-direction: row; 
+		flex-wrap: wrap;
+	}
+}
+
+.article {
+	/* background-color: aquamarine; */
+	width: 280px;
+	height: 150px;
+	margin: auto;
+
+	margin-block: 5px;
+	padding: 7px;
+	padding-block: 20px;
+
+	display: flex;
+	flex-direction: row;
+	
+	@media (min-width:720px) {
+		width: 340px;
+	}
+
+	@media (min-width: 1038px) { 
+
+		 
+			width: 250px;
+			display: flex;
+			flex-direction: column; 
+			align-items: center;
+			justify-content:center;
+			text-align: center;
+	
+	}
+	
+}
+
+.article__img {
+	width: 70px;
+	height: 70px;
+}
+
+.article__text {
+	/* background-color: burlywood; */
+	margin-left: 7px;
+	width: 70%;
+	height: 80%;
+
+	@media (min-width:1038px){
+		padding-top: 10px;
+		width: 90%;
+		height: 70%;
+	}
+}
+
+
+
+
+
